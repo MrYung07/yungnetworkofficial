@@ -21,3 +21,18 @@
 .contact-row{background:linear-gradient(100deg,#050914,#03060d);box-shadow:inset 0 0 14px #12326a22}
 .site-footer{min-height:52px}
 @media(max-width:760px){.hero{min-height:460px;background-position:60% center;background-image:linear-gradient(90deg,rgba(2,4,12,.97) 0%,rgba(2,4,12,.84) 48%,rgba(2,4,12,.48) 100%),url("assets/cyberpunk-hero.svg")}.hero:after{right:8%;width:100px}.hero-content{padding-top:30px}.hero-slogan{right:5%;bottom:35px;text-shadow:0 0 14px #7b00ff}.category-card{background-size:auto,auto 260%;}.community-promo{max-width:280px}}
+
+/* Artwork pass: custom illustrated portraits and news images */
+.avatar-image{display:block;width:69px;height:69px;object-fit:cover;margin:0 auto 7px;border:1px solid #9d32ff;border-radius:50%;box-shadow:0 0 14px #8000ff55;background:#070816}
+.staff-card:nth-child(2) .avatar-image{border-color:#17d8ff;box-shadow:0 0 14px #00cfff35}
+.staff-card:nth-child(3) .avatar-image{border-color:#477cff}
+.news-thumb{background-size:cover;background-position:center;position:relative}
+.news-thumb.warzone-thumb{background-image:linear-gradient(0deg,#03061266,transparent),url("assets/news-warzone.svg")}
+.news-thumb.discord-thumb{background-image:linear-gradient(0deg,#03061266,transparent),url("assets/news-discord.svg")}
+.news-thumb.streaming-thumb{background-image:linear-gradient(0deg,#03061266,transparent),url("assets/news-streaming.svg")}
+.news-thumb:after{content:"";position:absolute;inset:0;border-radius:inherit;background:linear-gradient(135deg,#ffffff0b,transparent 60%);pointer-events:none}
+.news-thumb.blue-thumb,.news-thumb.pink-thumb{background-image:none}
+.hero{background-position:center 48%;background-size:cover}
+.hero-content{max-width:1125px}
+.category-card{background-size:auto,auto 235%}
+@media(max-width:760px){.avatar-image{width:57px;height:57px}.category-card{background-size:auto,auto 260%}}
