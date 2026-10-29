@@ -36,3 +36,76 @@
 .hero-content{max-width:1125px}
 .category-card{background-size:auto,auto 235%}
 @media(max-width:760px){.avatar-image{width:57px;height:57px}.category-card{background-size:auto,auto 260%}}
+
+
+/* Reference screenshot reconstruction — desktop 1536px proportions */
+:root{--bg:#02050a;--panel:#050a15;--purple:#b400ff;--blue:#078dff}
+body{background:#02050a;font-family:'Barlow Condensed',Arial,sans-serif}
+.site-header{height:59px;max-width:none;padding-left:max(calc((100vw - 1340px)/2),6.25%);padding-right:max(calc((100vw - 1340px)/2),6.25%);gap:24px}
+.site-header .brand{margin-right:110px;min-width:100px}
+.brand span{font-size:29px;letter-spacing:-1.5px}
+.brand b{font-size:16px}
+.main-nav{gap:28px}
+.main-nav a{font-size:15px;gap:9px}
+.site-header>.socials{gap:16px}
+.header-cta{min-width:178px}
+.hero{height:341px;min-height:341px;border-bottom-color:#143b70;background-size:cover;background-position:center 48%}
+.hero-content{width:1125px;max-width:calc(100% - 40px);padding-top:22px;padding-bottom:25px}
+.eyebrow{font-size:11px;letter-spacing:3px;margin-bottom:14px}
+.hero-logo{margin-bottom:19px}
+.hero-logo span{font-size:76px}
+.hero-logo b{font-size:48px}
+.hero h1{font-size:21px}
+.hero-copy{font-size:13px;line-height:1.15}
+.hero-slogan{right:7%;top:38px;font-size:29px}
+.category-grid{padding:16px 0 15px;gap:22px}
+.category-card{height:137px;min-height:137px;padding:17px 18px;gap:14px;border-radius:8px}
+.category-icon{flex-basis:62px;height:62px}
+.category-card h2{font-size:18px}
+.category-card h3{font-size:13px}
+.category-card p{font-size:12px;line-height:1.18}
+.community{grid-template-columns:1.2fr 1fr 210px;gap:24px;padding-top:17px;padding-bottom:12px}
+.staff-panel{padding-right:15px}
+.section-heading h2,.news-heading h2{font-size:25px}
+.staff-grid{gap:11px}
+.staff-card{height:153px;padding:10px 4px 8px}
+.avatar-image{width:70px;height:70px;margin-bottom:7px}
+.staff-card h3{font-size:13px}
+.staff-card p{font-size:11px}
+.news-item{grid-template-columns:103px 1fr 12px;gap:11px;padding-bottom:7px;margin-bottom:7px}
+.news-thumb{height:56px}
+.news-item h3{font-size:13px}
+.news-item p{font-size:11px;line-height:1.08}
+.community-promo{height:220px;min-height:220px}
+.lower-section{background-color:#03060d;background-image:linear-gradient(135deg,transparent 0 70%,#19004422 70% 71%,transparent 72%),url("assets/cyberpunk-hero.svg");background-size:auto,cover;background-position:center,center 72%}
+.services{grid-template-columns:1.75fr 1fr 120px;gap:24px;padding-top:11px;padding-bottom:10px}
+.service-grid{gap:12px}
+.service-card{height:64px;min-height:64px}
+.site-footer{min-height:41px}
+@media(max-width:1400px){
+ .site-header{padding-left:5%;padding-right:5%}
+ .site-header .brand{margin-right:35px}
+ .category-grid{gap:13px}
+ .category-card{padding:14px 11px}
+}
+@media(max-width:1050px){
+ .site-header .brand{margin-right:auto}
+ .community{grid-template-columns:1fr 1fr}
+ .community-promo{display:none}
+}
+@media(max-width:760px){
+ .site-header{height:62px;padding:0 5%}
+ .site-header .brand{margin-right:auto}
+ .hero{height:auto;min-height:460px}
+ .hero-content{max-width:100%;padding:30px 6% 45px}
+ .hero-logo span{font-size:62px}
+ .hero-logo b{font-size:40px}
+ .category-grid{gap:10px;padding:12px 0}
+ .category-card{height:auto;min-height:120px;padding:15px}
+ .community{grid-template-columns:1fr;padding:18px 0;gap:18px}
+ .staff-card{height:auto}
+ .news-item{grid-template-columns:82px 1fr 10px}
+ .services{grid-template-columns:1fr;gap:20px}
+ .service-card{height:auto;min-height:68px}
+ .site-footer{min-height:unset}
+}
