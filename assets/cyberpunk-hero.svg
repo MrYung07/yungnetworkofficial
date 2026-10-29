@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 600" preserveAspectRatio="xMidYMid slice">
+<defs>
+ <linearGradient id="sky" x2="0" y2="1"><stop stop-color="#030615"/><stop offset=".55" stop-color="#100537"/><stop offset="1" stop-color="#020611"/></linearGradient>
+ <linearGradient id="glass" x2="1" y2="1"><stop stop-color="#101c53"/><stop offset=".45" stop-color="#080b24"/><stop offset="1" stop-color="#29045a"/></linearGradient>
+ <linearGradient id="neon"><stop stop-color="#1a8fff"/><stop offset=".5" stop-color="#a000ff"/><stop offset="1" stop-color="#ff25ef"/></linearGradient>
+ <linearGradient id="coat" x2="1" y2="1"><stop stop-color="#101127"/><stop offset=".5" stop-color="#03040c"/><stop offset="1" stop-color="#170b36"/></linearGradient>
+ <radialGradient id="glow"><stop stop-color="#a000ff" stop-opacity=".65"/><stop offset="1" stop-color="#3900ff" stop-opacity="0"/></radialGradient>
+ <pattern id="windows" width="28" height="34" patternUnits="userSpaceOnUse"><rect x="5" y="5" width="10" height="18" fill="#286bff" opacity=".65"/><rect x="18" y="5" width="5" height="18" fill="#d51cff" opacity=".45"/></pattern>
+ <filter id="blur"><feGaussianBlur stdDeviation="16"/></filter>
+</defs>
+<rect width="1600" height="600" fill="url(#sky)"/><ellipse cx="890" cy="260" rx="500" ry="330" fill="url(#glow)"/>
+<!-- distant neon skyline -->
+<g opacity=".85">
+ <path d="M0 340V200H65V130H102V280H145V170H191V315H228V220H270V120H310V340Z" fill="#080c25" stroke="#2143a6" stroke-width="2"/>
+ <path d="M0 200H65V130H102V280H145V170H191V315H228V220H270V120H310" fill="none" stroke="#a300ff" stroke-width="3"/>
+ <path d="M325 350V145H365V90H408V350Z" fill="#090c29" stroke="#155aff" stroke-width="2"/>
+ <path d="M420 350V210H458V125H490V350Z" fill="#111039" stroke="#ad00ff" stroke-width="2"/>
+ <path d="M510 350V100H560V60H602V350Z" fill="#070c26" stroke="#1c69ff" stroke-width="3"/>
+ <path d="M620 350V180H663V80H695V350Z" fill="#0a0c28" stroke="#a100ff" stroke-width="2"/>
+ <path d="M710 350V155H755V50H790V350Z" fill="#090c27" stroke="#126aff" stroke-width="3"/>
+ <path d="M805 350V190H850V115H885V350Z" fill="#0b0c2a" stroke="#a900ff" stroke-width="2"/>
+</g>
+<!-- windows on towers -->
+<g fill="url(#windows)" opacity=".8">
+ <path d="M8 210H95V335H8Z"/><path d="M150 190H184V335H150Z"/><path d="M277 140H305V335H277Z"/><path d="M334 160H402V350H334Z"/><path d="M520 112H594V350H520Z"/><path d="M628 195H686V350H628Z"/><path d="M718 170H784V350H718Z"/><path d="M814 205H879V350H814Z"/>
+</g>
+<!-- central glass megatowers -->
+<path d="M600 370L650 60L715 0L770 370Z" fill="url(#glass)" stroke="#2a52ff" stroke-width="3"/>
+<path d="M650 60L715 0L770 370M650 60L690 370M715 0L730 370" fill="none" stroke="#a400ff" stroke-width="3"/>
+<path d="M820 375L860 115L930 42L990 375Z" fill="url(#glass)" stroke="#a000ff" stroke-width="3"/>
+<path d="M860 115L930 42L990 375M900 375L930 42M860 115L990 180" fill="none" stroke="#276dff" stroke-width="2"/>
+<path d="M1010 375L1040 165L1080 105L1115 375Z" fill="#080c22" stroke="#f018ff" stroke-width="3"/>
+<g stroke="#5d31ff" stroke-width="2" opacity=".8"><path d="M640 120H753M631 175H763M622 230H772M612 285H780M850 170H976M842 220H984M834 270H991M1028 210H1108M1020 260H1110M1015 310H1114"/></g>
+<!-- neon signs -->
+<g font-family="Arial,sans-serif" font-weight="900" font-style="italic">
+ <g transform="translate(520 240) rotate(-9)"><rect width="78" height="120" rx="5" fill="#08071c" stroke="#b000ff" stroke-width="3"/><text x="39" y="50" fill="#f4eaff" font-size="22" text-anchor="middle">YUNG</text><text x="39" y="76" fill="#db00ff" font-size="17" text-anchor="middle">NET</text><path d="M12 92H66" stroke="#147bff" stroke-width="4"/></g>
+ <g transform="translate(735 150) rotate(8)"><rect width="68" height="105" rx="4" fill="#09061c" stroke="#ef1aff" stroke-width="3"/><text x="34" y="40" fill="#f8eaff" font-size="15" text-anchor="middle">GAMING</text><text x="34" y="60" fill="#bd38ff" font-size="12" text-anchor="middle">LIVE</text><path d="M8 78H60" stroke="#147bff" stroke-width="3"/></g>
+</g>
+<!-- rain and light streaks -->
+<g stroke="url(#neon)" stroke-width="2" opacity=".75"><path d="M60 0L0 250M160 0L40 350M360 0L240 290M450 0L360 260M980 0L850 250M1130 0L1000 310M1200 0L1080 260M1470 0L1290 310M1540 0L1400 210"/><path d="M0 400L530 370M100 430L650 395M700 400L1200 380M1050 435L1600 395" stroke-width="3"/></g>
+<!-- road / railing -->
+<path d="M0 440L850 375L1600 430V600H0Z" fill="#03050e" opacity=".9"/>
+<path d="M0 462L900 395L1600 452M0 505L900 435L1600 492M0 548L900 475L1600 532" fill="none" stroke="#17265a" stroke-width="5"/>
+<path d="M0 456L900 389L1600 446M0 500L900 429L1600 486" fill="none" stroke="#9b00ff" stroke-width="2" opacity=".8"/>
+<g stroke="#142a6d" stroke-width="5"><path d="M60 460L60 530M150 453L150 523M240 446L240 516M330 440L330 510M420 433L420 503M510 426L510 496M600 420L600 490M690 413L690 483M780 406L780 476M870 400L870 470M960 401L960 471M1050 408L1050 478M1140 415L1140 485M1230 422L1230 492M1320 429L1320 499M1410 436L1410 506M1500 443L1500 513"/></g>
+<!-- hooded cyber figure, right of center -->
+<ellipse cx="1100" cy="575" rx="300" ry="60" fill="#6d00ff" opacity=".25" filter="url(#blur)"/>
+<path d="M920 600L922 500Q930 435 970 395L1010 360L1040 280Q1025 230 1060 175Q1100 105 1170 95Q1245 95 1285 170Q1310 225 1280 285L1320 365L1390 430Q1430 475 1450 600Z" fill="url(#coat)" stroke="#25165f" stroke-width="4"/>
+<path d="M1005 365Q1010 270 1050 190Q1090 120 1170 110Q1240 115 1280 190L1310 300L1260 350L1215 295L1180 220L1130 300L1070 360Z" fill="#05050f" stroke="#3b1a91" stroke-width="5"/>
+<path d="M1045 185Q1085 115 1170 112Q1240 125 1270 190L1230 165L1185 145L1125 158L1080 200Z" fill="#10102a" stroke="#6d19e9" stroke-width="4"/>
+<path d="M1090 208L1120 225L1150 260L1170 282L1190 250L1220 225L1240 218L1210 280L1175 325L1140 285Z" fill="#02030a" stroke="#32116b" stroke-width="3"/>
+<!-- glowing purple emblem -->
+<path d="M1132 310L1170 345L1208 310L1200 355L1170 375L1140 355Z" fill="none" stroke="#d000ff" stroke-width="7" stroke-linejoin="round"/>
+<path d="M1080 410L1110 445L1140 425L1170 455L1200 425L1230 445L1260 410" fill="none" stroke="#9c00ff" stroke-width="5"/>
+<path d="M1000 380L970 475L1005 560M1295 370L1340 480L1315 575" fill="none" stroke="#27105e" stroke-width="12"/>
+<path d="M1000 380L970 475M1295 370L1340 480" fill="none" stroke="#6c00ff" stroke-width="3"/>
+<!-- foreground right edge shards -->
+<path d="M1510 0H1600V55L1540 110L1490 90L1550 40Z" fill="#8c00ff" opacity=".7"/><path d="M0 560L70 510L110 540L40 600H0Z" fill="#7d00ff" opacity=".6"/>
+</svg>
