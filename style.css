@@ -109,3 +109,11 @@ body{background:#02050a;font-family:'Barlow Condensed',Arial,sans-serif}
  .service-card{height:auto;min-height:68px}
  .site-footer{min-height:unset}
 }
+
+/* Use the supplied Yung Network identity consistently */
+.brand{transform:none;min-width:88px;height:46px;justify-content:center}
+.brand img{display:block;width:96px;height:44px;object-fit:contain}
+.hero-logo-image{display:block;width:300px;height:205px;object-fit:contain;object-position:left center;margin:-8px 0 0 -8px;filter:drop-shadow(0 0 12px #a000ff30)}
+.hero h1{margin-top:-2px}
+.hero-content{padding-top:16px}
+@media(max-width:760px){.brand{height:42px}.brand img{width:82px;height:40px}.hero-logo-image{width:260px;height:174px;margin:-4px 0 0 -6px}.hero-content{padding-top:25px}}
